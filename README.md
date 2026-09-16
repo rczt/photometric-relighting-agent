@@ -36,17 +36,3 @@ Image Finale
 
 ---
 
-## Installation et Initialisation
-
-### 1. Cloner le dépôt et initialiser l'environnement
-
-```bash
-git clone <url-du-depot>
-cd photometric-relighting-agent
-
-# Création du venv avec Python 3.12 via uv
-uv venv --python 3.12
-source .venv/bin/activate  # Sous Windows : .venv\Scripts\activate
-
-# Installation des dépendances de calcul et de traitement d'image
-uv pip install numpy opencv-python pillow colour-science pydantic requests
