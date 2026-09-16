@@ -1,0 +1,28 @@
+﻿# Environnements virtuels
+.venv/
+venv/
+ENV/
+
+# Caches Python & Bytecode
+__pycache__/
+*.py[cod]
+*.class
+.pytest_cache/
+
+# Données volumineuses et résultats de recherche
+experiments/inputs/*.png
+experiments/inputs/*.jpg
+experiments/inputs/*.exr
+experiments/outputs/*
+!experiments/outputs/.gitkeep
+!experiments/inputs/.gitkeep
+
+# Clés et variables d'environnement
+.env
+*.local
+
+# IDE & OS
+.vscode/
+.idea/
+Thumbs.db
+[Dd]esktop.ini
