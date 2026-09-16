@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "photometric-relighting"
+version = "0.1.0"
+description = "Neuro-Symbolic Photometric Relighting Prototype"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "colour-science>=0.4.7",
+    "numpy>=2.0.0",
+    "opencv-python>=4.10.0",
+    "pillow>=10.0.0",
+    "pydantic>=2.0.0",
+    "requests>=2.31.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.4.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/photometric_relighting"]

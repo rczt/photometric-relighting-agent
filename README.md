@@ -36,3 +36,20 @@ Image Finale
 
 ---
 
+## Installation et Initialisation
+
+### 1. Cloner le dépôt et initialiser l'environnement
+
+```bash
+git clone https://github.com/rczt/photometric-relighting-agent.git
+cd photometric-relighting-agent
+
+# Création du venv avec Python 3.12 via uv
+uv venv --python 3.12
+source .venv/bin/activate  # Sous Windows : .venv\Scripts\activate
+
+# Installation du package en mode éditable avec ses dépendances
+uv pip install -e .
+# Ou synchronisation complète via uv sync
+uv sync
+```
